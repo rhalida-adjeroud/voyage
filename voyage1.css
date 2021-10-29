@@ -1,0 +1,251 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2982d;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    background: #213054;
+    border-bottom: #274896 ;
+}
+.liste-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    list-style-type: none;
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px; 
+}
+.items{
+    cursor: pointer;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
+.items span{
+    font-size: 20px;
+}
+.items:nth-child(3){
+    margin-left: 0px;
+}
+/*sous liste*/
+.sous-liste{
+    position: absolute;
+    display: none;
+    width: 180px;
+}
+
+.items-liste{
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background: #65c0ba;
+    border-bottom:0.8px solid #65c0ba ;
+}
+.items-liste{
+    background: #65c0ba;
+}
+.items:hover > ul{
+    display: block;
+}
+/*image animée*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#flip{
+    height: 50px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+#flip > div > div{
+    height: 50px;
+    padding: 4px 12px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+#flip div:first-child{
+    animation: show 5s linear infinite;;
+}
+#flip div div {
+    background: #e72a09;
+}
+#flip div:first-child div{
+    background: #8f0404;
+}
+#flip div:last-child div{
+    background: #e72a09;
+}
+@keyframes show {
+    0% {  margin-top: -270px }
+    5% { margin-top: -180PX}
+    33% {margin-top: -180px}
+    38% {margin-top: -90px}
+    66% {margin-top: -90px}
+    71% {margin-top: 0px}
+    99.99% {margin-top: 0PX}
+    100% {margin-top: -270%} 
+}
+.carte2021{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.carte2021 .chine .carteadj{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.carte2021 .chine .carteadj .left{
+    flex: 0 0 30%;
+    padding: 20px 20PX;
+    overflow: scroll;
+    background-color: #213054;
+    color: #fff;
+    height: 650px;
+    margin-top: 10px;
+    
+}
+.carte2021 .chine .carteadj.right{
+    flex: 0 0 70%;
+}
+.carte2021 .chine .carteadj img {
+    height: 650px;
+    width: 500px;
+    margin-top: 10px;
+}
+h1{
+
+    text-align: center;
+}
+h2{
+    margin-top: 13 px;
+}
+.imgimg{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 35px;
+    width: 250px;
+    height: 250px;     
+}
+.liens{
+    color:black;
+}
+
+/*------footer----*/
+
+footer{
+    background: #213054;
+    display: flex;
+    flex: 1 0 auto;
+    flex-shrink: 0;
+    justify-content: space-between;
+    border-top: 1px solid #213054;
+    width: 100%;
+    height: 70%;
+    color: #fff;
+}
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 20px 30 70px;
+}
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+.footer-service{
+    width: 25px;
+    margin: 0 30px;
+}
+.footer-service h3{
+    margin-top: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+.liste-services{
+    list-style-type: none;
+    text-align: justify;
+}
+.liste-services li{
+    margin-top: 15px;
+    width: 250px;
+    padding: 5px 0px;
+}
+.liste-services a{
+    text-decoration: none;
+    color: #fff
+}
+.liste-services a:hover{
+    color: #e72a09;
+} 
+.lien{
+    color: #fff;
+}
+.table{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:baseline;
+}
+
+@media (max-width:740px) and (max-height:740px){
+
+    .imgimg{
+        display: flex;
+        width: 100px;
+        height: 50px;
+        flex-direction: row;
+
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------FOTTER---------------------- */
+
+
